@@ -1,0 +1,169 @@
+.title {
+    margin: 300px auto;
+    width: 1320px;
+    text-align: center;
+}
+
+.title p {
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 auto;
+    letter-spacing: -0.025em;
+    margin: 0 0 20px 0;
+}
+
+.title h2 {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.fullpage {
+    position: relative;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+
+.fullpage figure {
+    position: relative;
+}
+
+.fullpage .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1320px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    letter-spacing: -0.025em;
+}
+
+.fullpage .inner h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+
+.fullpage .inner p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+
+.fullpage .inner>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.fullpage .inner>ul>li {
+    margin: 10px 15px;
+    font-weight: 200;
+}
+
+.fullpage .inner a {
+    display: inline-block;
+    color: #fff;
+}
+
+
+.full01 .itm01 {
+    background: url(../img/dl이엔씨/img_bg_section1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 800px;
+}
+
+
+.full02 .itm02 {
+    background: url(../img/dl이엔씨/riverpark-img-1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 800px;
+}
+
+.full03 .itm03 {
+    background: url(../img/dl이엔씨/main_01_01_load.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 800px;
+}
+
+.full04 .itm04 {
+    background: url(../img/dl이엔씨/PC_main_KV_01_1503108884785_1503920615849.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 800px;
+}
+
+
+/* .fullpage .cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 400px 500px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 600px;
+    
+} */
+
+
+.fullpage .cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fullpage .cover .cover_title {
+    display: flex;
+    width: 1320px;
+    justify-content: center;
+    margin: 500px 0 0 0;
+    gap: 165px;
+}
+
+.fullpage .cover .cover_title li {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    color: rgba(200, 200, 200, 0.5);
+}
+
+/* 
+.fullpage .cover .cover_title li.on {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+} */
+
+
+.fullpage .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1320px;
+}
+
+.fullpage .slick-dots button {
+    display: none;
+}
+
+.fullpage .slick-dots li {
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: rgba(200, 200, 200, 0.5);
+}
+
+.fullpage .slick-dots li.slick-active {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: #fff;
+}
