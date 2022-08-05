@@ -1,0 +1,590 @@
+.Wrap {}
+
+/* * {
+    outline: 1px solid #f00;
+} */
+
+.container {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 970px;
+    /* height: 100vh; */
+    line-height: 100px;
+}
+
+#header .container {
+    justify-content: space-between;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#header .container h1 {
+    width: 100px;
+}
+
+#header .container nav>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#header .container nav>ul>li,
+p {
+    font-weight: 500;
+}
+
+#header .container nav>a {
+    display: block;
+}
+
+#header .container .btn {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+
+}
+
+#header .container .btn i {
+    display: block;
+    font-size: 19px;
+    /* margin: 41px auto 10px auto; */
+    /* padding: 50px auto auto; */
+    padding: 40px 0 0 0;
+}
+
+.mainbg {
+    margin: 0 auto;
+}
+
+.mainbg .pic {
+    height: 970px;
+    background: url(../img/dl이엔씨/riverheim-img-5.jpg)no-repeat center center/cover;
+}
+
+/* .mainbg .slogan {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1320px;
+    text-align: right;
+    color: #333;
+}
+
+.mainbg .slogan p {
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 0 0 3px #fff
+}
+
+.mainbg .slogan h2 {
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    justify-content: right;
+} */
+
+.mainbg .wheel {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 45px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    font-size: 0;
+
+}
+
+.mainbg .wheel span {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #333;
+    background: transparent;
+    height: 11px;
+    border-radius: 5px;
+    /* width: 10px; */
+    /* border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    transform: rotate(225deg); */
+    animation: wheel 1s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 15px;
+    }
+}
+
+.slick-dots .slick-active button {
+    display: none;
+
+}
+
+.slide .mini_slide .sub_intro {
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0;
+    height: 970px;
+    /* width: calc((100% - 100%) / 2 + 100%); */
+}
+
+.slide .mini_slide .intro {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.slide .intro>li {
+    display: none;
+}
+
+.slide .intro>li.on {
+    display: block;
+}
+
+.slide .mini_slide .intro h3 {
+    margin: 0 0 50px 0;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
+.slide .mini_slide .intro strong {
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+}
+
+.slide .mini_slide .intro p {
+    margin: 30px 0;
+    text-align: middle;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: -0.025em;
+    height: 100px;
+}
+
+.slide .mini_slide .intro a,
+.slide .mini_slide .intro i {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: -0.025em;
+}
+
+.slide .mini_slide .left_arrow i {
+    margin: 60px 0;
+    font-size: 21px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.slide .mini_slide .left_arrow i:nth-child(2) {
+    margin: 0 0 0 30px;
+    cursor: pointer;
+}
+
+.mini_slide .left_slide {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 1200px;
+    height: 970px;
+}
+
+.mini_slide .left_slide figure {}
+
+.title {
+    margin: 300px auto;
+    width: 1320px;
+    text-align: center;
+}
+
+.title p {
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 auto;
+    letter-spacing: -0.025em;
+    margin: 0 0 20px 0;
+}
+
+.title h2 {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.fullpage {
+    position: relative;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+
+.fullpage figure {
+    position: relative;
+}
+
+.fullpage .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1320px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    letter-spacing: -0.025em;
+}
+
+.fullpage .inner h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+
+.fullpage .inner p {
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0 0 30px 0;
+    color: #fff;
+}
+
+.fullpage .inner>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.fullpage .inner>ul>li {
+    padding: 10px 15px;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 0.025em;
+}
+
+.fullpage .inner a {
+    display: inline-block;
+    color: #fff;
+}
+
+
+.full01 .itm01 {
+    background: url(../img/dl이엔씨/img_bg_section1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 970px;
+}
+
+
+.full02 .itm02 {
+    background: url(../img/dl이엔씨/riverpark-img-1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 970px;
+}
+
+.full03 .itm03 {
+    background: url(../img/dl이엔씨/main_01_01_load.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 970px;
+}
+
+.full04 .itm04 {
+    background: url(../img/dl이엔씨/PC_main_KV_01_1503108884785_1503920615849.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 970px;
+}
+
+
+/* .fullpage .cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 400px 500px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 600px;
+    
+} */
+
+
+.fullpage .cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fullpage .cover .cover_title {
+    display: flex;
+    width: 1320px;
+    justify-content: center;
+    margin: 500px 0 0 0;
+    gap: 165px;
+}
+
+.fullpage .cover .cover_title li {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1;
+}
+
+/* 
+.fullpage .cover .cover_title li.on {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+} */
+
+
+.fullpage .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1320px;
+
+}
+
+.fullpage .slick-dots button {
+    display: none;
+}
+
+.fullpage .slick-dots li {
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: rgba(200, 200, 200, 0.5);
+}
+
+.fullpage .slick-dots li.slick-active {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: #fff;
+}
+
+.slide02 .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* 포지션 제트인덱스는 오토임 */
+
+.slide02 .slick-arrow:hover {
+    opacity: 1;
+    transition: border 0.5s;
+}
+
+.slide02 .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slide02 .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.company {
+    display: flex;
+    width: 1320px;
+    height: 970px;
+    padding: 100px 0;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.company .first {
+    width: 645px;
+    height: 770px;
+    background: url(../img/dl이엔씨/company_intro.jpg) no-repeat center;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.company .first h4 {
+    padding: 100px 0 0 0;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0 0 20px 355px;
+}
+
+.company .first p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 20px 355px;
+}
+
+.company .first a {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 10px 355px;
+    cursor: pointer;
+}
+
+.company .second_f {
+    width: 645px;
+    height: 370px;
+    margin: 0 0 30px 0;
+    background: url(../img/dl이엔씨/client_center.jpg) no-repeat center;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.company .second_f h4 {
+    padding: 100px 0 0 0;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 20px 330px;
+    letter-spacing: 0.025em;
+}
+
+.company .second_f p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 20px 330px;
+    letter-spacing: 0.025em;
+}
+
+.company .second_f a {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 10px 330px;
+    cursor: pointer;
+}
+
+.company .second_s {
+    flex-direction: column-reverse;
+    width: 645px;
+    height: 370px;
+    background: url(../img/dl이엔씨/dl_01.jpg) no-repeat center;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.company .second_s h4 {
+    padding: 100px 0 0 0;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 20px 330px;
+    letter-spacing: 0.025em;
+}
+
+.company .second_s p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 20px 330px;
+    line-height: 23px;
+    letter-spacing: 0.025em;
+}
+
+.company .second_s a {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 10px 330px;
+    cursor: pointer;
+}
+
+#footer {
+    height: 300px;
+    background: #999;
+    color: #fff
+}
+
+#footer .top {
+    line-height: 100px;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+#footer .top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .container dt,
+#footer .container dd {
+    display: inline-block;
+}
+
+#footer .top dt::before,
+#footer .top dd~dd::before {
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+}
+
+#fl {
+    font-size: 13px;
+    background: transparent;
+    color: #ddd;
+    border: none;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+#footer .bottom {
+    display: flex;
+    margin: 0 auto;
+    width: 1320px;
+    line-height: 50px;
+}
+
+#footer .bottom address {
+    font-style: normal;
+    font-size: 13px;
+}
+
+#footer .bottom .container {
+    display: flex;
+    gap: 15px;
+}
+
+.toTop {
+    display: none;
+    position: fixed;
+    inset: auto 50px 50px auto;
+    z-index: 10000;
+}
+
+.toTop p {
+    padding: 10px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    color: #555;
+    font-size: 15px;
+    font-weight: 700;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    border-bottom: 2px solid #555;
+}
