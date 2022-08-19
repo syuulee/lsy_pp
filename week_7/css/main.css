@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 
 /* * {
     outline: 1px solid skyblue;
@@ -82,8 +80,7 @@
 }
 
 .header_gnb.fixed .smenu {
-    color: #000;
-    background: rgba(255, 255, 255, 0.8);
+    color: #333;
 }
 
 .gnb>ul {
@@ -113,7 +110,7 @@
 
 .gnb>ul>li .smenu {
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
     width: 160px;
@@ -125,7 +122,7 @@
 }
 
 .gnb>ul>li:hover .smenu {
-    top: 80px;
+    top: 75px;
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
@@ -145,18 +142,19 @@
 
 .main_bg h2 {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
+    font-family: noto;
     font-size: 51px;
-    font-weight: 700;
-    letter-spacing: 0.3em;
+    font-weight: 500;
+    letter-spacing: 0.5em;
     color: #fff;
 }
 
 .main_form {
     position: absolute;
-    top: 77%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -623,7 +621,7 @@
 
 .scroll_img strong {
     display: block;
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 500;
     margin: 0 0 10px 0;
     flex-direction: column;
@@ -689,7 +687,7 @@
     margin: 0 auto;
     text-align: center;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .close img {
@@ -702,33 +700,4 @@
 
 .close dl>dt {
     margin: 0 0 10px 0;
-}
-
-.wheel {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    animation: down 0.77s linear infinite;
-}
-
-.wheel>p {
-    font-size: 11px;
-    /* margin: 0 0 5px 0; */
-    letter-spacing: 0.025em;
-    color: #fff;
-}
-
-.wheel>i {
-    /* display: block; margin: -15px; */
-    font-size: 27px;
-    color: #fff;
-}
-
-
-@keyframes down {
-    to {
-        bottom: 9%;
-    }
 }

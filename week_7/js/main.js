@@ -30,7 +30,7 @@ $(function () {
     var contentNext = $("#content01 i.xi-angle-right-thin");
 
     contentPrev.on("click", function () {
-        contentSlider01.slick("slickNext")
+        contentSlider01.slick("slickPrev")
     });
     contentNext.on("click", function () {
         contentSlider01.slick("slickNext")
