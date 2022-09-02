@@ -63,7 +63,7 @@
 }
 
 .header .gnb h1 {
-    width: 230px;
+    width: 200px;
     text-align: center;
 }
 
@@ -503,10 +503,10 @@
 
 .scroll p {
     position: absolute;
-    bottom: 7%;
+    bottom: 8%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 15px;
+    font-size: 13px;
     writing-mode: vertical-rl;
     text-orientation: upright;
     animation: wheel 0.5s infinite;
@@ -517,6 +517,6 @@
 
 @keyframes wheel {
     to {
-        bottom: 6%;
+        bottom: 7%;
     }
 }
