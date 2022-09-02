@@ -623,7 +623,7 @@
                         </div>
                         <div class="itm09 itm">
                             <div class="grid_infor">
-                                <h3>세상에서 가장 바쁜 간호사 고미호의 이중생활 시작?!</h3>
+                                <h3>세상에서 가장 바쁜 간호사 <br />고미호의 이중생활 시작?!</h3>
                                 <p>2022.08.29</p>
                                 <a href="#!">더보기 <i class="xi-angle-right"></i></a>
                             </div>
@@ -760,13 +760,6 @@
         window.addEventListener('DOMContentLoaded', () => {
 
 
-            document.querySelector('.icon>i').addEventListener('click', function () {
-                this.classList.toggle('on');
-                document.querySelector('.total_menu').classList.toggle('on');
-            });
-
-
-
             var swiper = new Swiper(".mySwiper", {
                 loop: true,
                 // direction: "vertical",
@@ -795,6 +788,12 @@
                     prevEl: ".swiper-button-prev",
                 },
             });
+
+            document.querySelector('.icon i').addEventListener('click', function () {
+                console.log(000)
+                document.querySelector('.total_menu').classList.toggle('on');
+            });
+
         })
 
 
