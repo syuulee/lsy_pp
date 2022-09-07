@@ -1,3 +1,5 @@
+import { IconName } from "react-icons/io";
+
 function Header() {
     return (
         <>
@@ -16,7 +18,7 @@ function Header() {
                     </ul>
                 </nav>
                 <div className="icon">
-                    
+                    <IoIosCart />
                 </div>
             </header>
         </>
