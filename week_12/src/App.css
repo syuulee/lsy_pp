@@ -31,19 +31,124 @@
     padding: 0 15px;
 }
 
-.MainVisual {}
-
-.MainVisual figure {
-    height: 800px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+.MainVisual {
+    position: relative;
 }
 
-.MainVisual .itm01 {
-    background-image: url(../public/img/mv01.jpg);
+.MainVisual .itm {
+    height: 100vh;
+    background: url(../public/img/mv01.png) no-repeat center/70%;
 }
 
-.MainVisual .itm02 {
-    background-image: url(../public/img/mv02.jpg);
+.intro {
+    padding: 100px 0;
+}
+
+/* .intro .container {
+    display: flex;
+} */
+
+.intro .left {
+    height: 400px;
+    background: url(../public/img/sc_1.jpg)no-repeat center center;
+}
+
+.intro .right h2 {
+    font-size: 33px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+/* .intro .container {
+    display: flex;
+} */
+
+.intro .right p {
+    font-size: 15px;
+    margin: 0 0 30px 0;
+}
+
+.grid_content {
+    padding: 100px 0;
+}
+
+.grid_content .tit {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grid_content .tit h2 {
+    font-size: 29px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.grid_content .container {
+    display: grid;
+    grid-template-columns: 433px 433px 433px;
+    grid-template-rows: 250px 250px 250px;
+}
+
+.grid_content .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+    /* border: 1px solid #999; */
+}
+
+.grid_content .itm05 {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.grid_content .itm01:hover {
+    height: 250px;
+    background: url(../public/img/item02.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.grid_content .itm02:hover {
+    height: 250px;
+    background: url(../public/img/item04.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.grid_content .itm03:hover {
+    height: 250px;
+    background: url(../public/img/item03.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.grid_content .itm04:hover {
+    height: 250px;
+    background: url(../public/img/item05.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.grid_content .itm06:hover {
+    height: 250px;
+    background: url(../public/img/item06.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.grid_content .itm07:hover {
+    height: 250px;
+    background: url(../public/img/item01.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.grid_content .itm08:hover {
+    height: 250px;
+    background: url(../public/img/item07.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.grid_content .itm09:hover {
+    height: 250px;
+    background: url(../public/img/item08.jpg) no-repeat center center;
+    font-size: 0;
 }

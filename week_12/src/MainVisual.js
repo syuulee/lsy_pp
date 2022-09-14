@@ -2,37 +2,35 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
-const SLIDE = [
-    { id: 1, content: "01. The world expands along the new path created", desc: "14년 연속 1위로 대한민국 엘리베이터의 역사를 만들어 갑니다.", link: "https://my.matterport.com/show/?m=yEdf9FWaNav" },
-    { id: 2, content: "02. The world expands along the new path created", desc: "14년 연속 1위로 대한민국 엘리베이터의 역사를 만들어 갑니다.", link: "https://my.matterport.com/show/?m=yEdf9FWaNav" },
-]
+// const SLIDE = [
+//     { id: 1, content: "01. The world expands along the new path created", desc: "14년 연속 1위로 대한민국 엘리베이터의 역사를 만들어 갑니다.", link: "https://my.matterport.com/show/?m=yEdf9FWaNav" },
+//     { id: 2, content: "02. The world expands along the new path created", desc: "14년 연속 1위로 대한민국 엘리베이터의 역사를 만들어 갑니다.", link: "https://my.matterport.com/show/?m=yEdf9FWaNav" },
+// ]
 
 const MainVisual = () => {
-    const [IDX, setIDX] = useState();
-    useEffect(() => {
-        setIDX(0)
-    }, []);
-    const mainSlide = useRef(null);
-    const setting = {
-        arrows: false,
-        // dots: true,
-        // afterChange: index => setIDX(index),
-        autoplay: true,
-        autoplaySpeed: 5000,
-        fade: true,
-    }
+    // const [IDX, setIDX] = useState();
+    // useEffect(() => {
+    //     setIDX(0)
+    // }, []);
+    // const mainSlide = useRef(null);
+    // const setting = {
+    //     arrows: false,
+    //     // dots: true,
+    //     // afterChange: index => setIDX(index),
+    //     autoplay: true,
+    //     autoplaySpeed: 5000,
+    //     fade: true,
+    // }
     return (
         <section className="MainVisual">
-            <Slider {...setting} ref={mainSlide}>
+            <div className="container">
+                <div className="itm"></div>
+            </div>
+            {/* <Slider {...setting} ref={mainSlide}>
                 {
                     SLIDE.map((slide, idx) => {
                         return (
                             <figure key={slide.id} className={'itm0' + slide.id + (idx === IDX ? 'on' : '')}>
-                                <div className="container">
-                                    <h2>{slide.content}</h2>
-                                    <p>{slide.desc}</p>
-                                    <a href={slide.link} target="_blank">VIEW MORE</a>
-                                </div>
                             </figure>
                         )
                     })
@@ -41,7 +39,7 @@ const MainVisual = () => {
             <div className="slideArrows">
                 <button onClick={() => mainSlide.current.slickPrev()}><i className="xi-arrow-left"></i></button>
                 <button onClick={() => mainSlide.current.slickNext()}><i className="xi-arrow-right"></i></button>
-            </div>
+            </div> */}
         </section >
     )
 }
