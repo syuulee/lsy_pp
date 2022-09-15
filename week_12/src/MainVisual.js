@@ -40,6 +40,12 @@ const MainVisual = () => {
                 <button onClick={() => mainSlide.current.slickPrev()}><i className="xi-arrow-left"></i></button>
                 <button onClick={() => mainSlide.current.slickNext()}><i className="xi-arrow-right"></i></button>
             </div> */}
+            <div className="scroll">
+                <span className="bar"></span>
+            </div>
+            <div className="colored">
+                <span className="colored_bar"></span>
+            </div>
         </section >
     )
 }

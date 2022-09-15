@@ -4,6 +4,7 @@ import MainVisual from './MainVisual';
 import Intro from './Section01';
 import Grid from './Section02';
 import Popular from './Section03';
+import Footer from './Footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Grid />
         <Popular />
       </main>
+      <Footer />
     </>
   );
 }
