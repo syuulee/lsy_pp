@@ -37,39 +37,53 @@
 
 .MainVisual {
     position: relative;
+    height: 100vh;
 }
 
-.MainVisual .itm {
-    height: 100vh;
-    background: url(../public/img/mv01.png) no-repeat center/70%;
+.MainVisual .itm figure {
+    padding: 70px 0 0 0;
+}
+
+.MainVisual .itm figure img {
+    width: 100%;
 }
 
 .intro {
     padding: 100px 0;
 }
 
-/* .intro .container {
+.intro .container {
     display: flex;
-} */
-
-.intro .left {
-    height: 400px;
-    background: url(../public/img/sc_1.jpg)no-repeat center center;
 }
 
-.intro .right h2 {
-    font-size: 33px;
+.intro .container .left {
+    width: 100%;
+}
+
+.intro .container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .container .right h2 {
+    font-size: 39px;
     font-weight: 700;
     margin: 0 0 30px 0;
 }
 
-/* .intro .container {
-    display: flex;
-} */
+.intro .container .right strong {
+    display: block;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
 
-.intro .right p {
+.intro .container .right p {
     font-size: 15px;
     margin: 0 0 30px 0;
+    line-height: 1.4;
 }
 
 .grid_content {
@@ -265,6 +279,7 @@ footer {
 
 .footer_top {
     padding: 30px 0 100px 0;
+
 }
 
 .footer_top .top {
@@ -316,7 +331,7 @@ footer {
 
 .scroll {
     position: absolute;
-    bottom: 10%;
+    bottom: 13%;
     left: 50%;
     transform: translateX(-50%);
 }

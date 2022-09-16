@@ -24,7 +24,11 @@ const MainVisual = () => {
     return (
         <section className="MainVisual">
             <div className="container">
-                <div className="itm"></div>
+                <div className="itm">
+                    <figure>
+                        <img src={process.env.PUBLIC_URL + "/img/mv_01.jpg"} alt="" />
+                    </figure>
+                </div>
             </div>
             {/* <Slider {...setting} ref={mainSlide}>
                 {
