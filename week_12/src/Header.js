@@ -7,7 +7,7 @@ function Header() {
                 <div className="container">
                     <h1>
                         <a href=''>
-                            <img src="./img/logo.svg" alt="" />
+                            <img src={process.env.PUBLIC_URL + "/img/logo.jpg"} alt="" />
                         </a>
                     </h1>
                     <nav className="gnb">
