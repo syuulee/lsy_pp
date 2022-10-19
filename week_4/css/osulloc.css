@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+* {
+    outline: 1px solid --lightseagreen;
+}
+
+
 h2,
 strong,
 p,
@@ -353,20 +358,15 @@ a {
     background: #198708;
 }
 
-/* .fixed_bg { position: relative; padding: 50px 0; margin: 0 auto; } 
-
-.fixed_bg .box { width: 1200px; height: 700px; margin: 0 auto; background: #198754; } 
-
-.fixed_bg .fixed_pic { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../img/tea_field_item_3.jpg) no-repeat fixed center center/cover; width: 100%; height: 500px; } */
-
 .fixed_bg {
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 .fixed_bg .box {
     width: 1200px;
-    height: 100px;
-    background: #198708;
+    height: 80px;
+    background: rgba(25, 135, 8, 0.8);
     margin: 0 auto;
 }
 
@@ -378,19 +378,20 @@ a {
 
 .fixed_bg .box_box {
     width: 1200px;
-    height: 100px;
-    background: #198708;
+    height: 80px;
+    background: rgba(25, 135, 8, 0.8);
     margin: 0 auto;
 }
 
 .fixed_bg .fixed_pic h2 {
-    padding: 50px 0 0 0;
+    padding: 100px 0 0 0;
     font-size: 29px;
     font-weight: 700;
-    text-transform: uppercase;
     margin: 0 0 10px 0;
     letter-spacing: -0.025em;
     text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #333;
 }
 
 .fixed_bg .fixed_pic p {
@@ -399,21 +400,33 @@ a {
     margin: 0 0 30px 0;
     letter-spacing: -0.025em;
     text-align: center;
-    line-height: 23px;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 0 3px #333;
 }
 
 .fixed_bg .fixed_pic a {
     padding: 5px 40px;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     border-radius: 10px;
+    color: #fff;
+    text-shadow: 0 0 3px #333;
+    /* box-shadow: 1px 1px 5px #333; */
 }
 
 .fixed_bg .fixed_pic i {
-    margin-left: 5px;
+    margin: 0 0 0 5px;
+    font-size: 17px;
+    vertical-align: -1.5px;
+    color: #fff;
+    text-shadow: 0 0 3px #333;
 }
 
-.hover_challenge {
+.hover_challenge h2 .hover_challenge {
     padding: 100px 0;
+}
+
+.hover_challenge .inner {
     width: 1200px;
     margin: 0 auto;
 }
@@ -421,13 +434,12 @@ a {
 .hover_challenge h2 {
     font-size: 29px;
     font-weight: 700;
-    text-transform: uppercase;
     margin: 0 0 10px 0;
     letter-spacing: -0.025em;
     text-align: left;
 }
 
-.hover_challenge p {
+.hover_challenge .subtitle {
     font-size: 17px;
     font-weight: 300;
     margin: 0 0 30px 0;
@@ -435,11 +447,13 @@ a {
     text-align: left;
 }
 
-.hover_challenge>span {
+.hover_challenge .subtitle::after {
+    content: "";
     display: block;
-    border-top: 1px solid #198754;
+    margin: 0 0 10px auto;
     width: 380px;
-    margin-left: auto;
+    height: 1px;
+    background: #198708;
 }
 
 .hover_challenge .container {
@@ -497,12 +511,6 @@ a {
     display: flex;
 }
 
-/* .hover_challenge .cafe_box h3 { font-size: 17px; font-weight: 500; margin: 0 0 10px 20px; } 
-
-.hover_challenge .cafe_box p { display: inline-block; font-size: 15px; font-weight: 400; margin: 0 0 30px -10px; } 
-
-.hover_challenge .cafe_box a { display: inline-block; padding: 3px 15px; font-size: 15px; font-weight: 300; margin: 0 px 30px 5px; background: #198754; } */
-
 .hover_challenge .delivery_box {
     position: relative;
     display: flex;
@@ -514,139 +522,56 @@ a {
     left: 10px;
 }
 
-.plz_hover,
-.yaya,
-.lala {
+.hover_challenge .box {
     position: relative;
+    overflow: hidden;
 }
 
-
-.hover_box,
-.hover,
-.hover_boxer {
+.hover {
     position: absolute;
-    top: 0;
-    margin: 0 auto;
+    top: 500px;
     width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(33, 33, 33, 0.7);
     visibility: hidden;
     opacity: 0;
 }
 
-
-.total_bbakchim {
-    padding: 150px 0;
-    width: 100%;
-    background: rgba(33, 33, 33, 0.7);
-    color: #fff;
-    height: 473px;
-}
-
-.hover_box .angry strong {
-    font-size: 21px;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: -0.025em;
-}
-
-.hover_box .angry .line {
-    display: inline-block;
-    border-top: 1px solid #fff;
-    margin: 0 auto;
-    width: 330px;
-    margin: 10px;
-}
-
-.hover_box .angry_angry .month {
-    font-size: 17px;
-    font-weight: 500;
-    margin-right: 5px;
-    color: #fff;
-    letter-spacing: -0.025em;
-}
-
-.hover_box .angry_angry .price {
-    font-size: 17px;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: -0.025em;
-}
-
-.hover_box .angry_angry>a {
-    display: inline-block;
-    padding: 5px 15px;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 0 0 0 10px;
-    background: #198754;
-    color: #fff;
-}
-
-.hover_box .ha_bbak {
-    width: 330px;
-    margin-left: 60px;
-}
-
-.hover_box .ha_bbak p {
-    font-size: 15px;
-    font-weight: 300;
-    margin: 20px 0 20px 0;
-    line-height: 23px;
-    color: #fff;
-    letter-spacing: -0.025em;
-}
-
-.hover_box .deep_bbak {
-    width: 330px;
-    margin-left: 60px;
-    line-height: 25px;
-}
-
-.hover_box .deep_bbak .item {
-    font-size: 15px;
-    font-weight: 400;
-    text-align: left;
-    letter-spacing: -0.025em;
-}
-
-
-.plz_hover:hover .hover_box {
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
+.box:hover .hover {
+    top: 0;
     visibility: visible;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
-.plz_hover:hover .box_intro {
+.box:hover .box_intro {
     display: none;
 }
 
-
-.total {
-    padding: 150px 0;
-    width: 100%;
-    background: rgba(33, 33, 33, 0.7);
-    color: #fff;
-    height: 473px;
-}
-
-.hover .any strong {
+.hover .title strong {
+    display: block;
     font-size: 21px;
     font-weight: 500;
     color: #fff;
     letter-spacing: -0.025em;
 }
 
-.hover .any .liner {
-    display: inline-block;
-    border-top: 1px solid #fff;
-    margin: 0 auto;
+.hover .title strong::after {
+    content: "";
+    display: block;
+    margin: 10px 0;
     width: 330px;
-    margin: 10px;
+    height: 1px;
+    background: #fff;
 }
 
-.hover .anangry .monthly {
+.hover .detail_desc .monthly {
+    display: inline-block;
     font-size: 17px;
     font-weight: 500;
     margin-right: 5px;
@@ -654,139 +579,50 @@ a {
     letter-spacing: -0.025em;
 }
 
-.hover .anangry .pricly {
+
+.hover .detail_desc .pricly {
+    display: inline-block;
     font-size: 17px;
     font-weight: 500;
     color: #fff;
     letter-spacing: -0.025em;
 }
 
-.hover .anangry>a {
+.hover .detail_desc>a {
     display: inline-block;
     padding: 5px 15px;
     font-size: 15px;
     font-weight: 400;
-    margin: 0 0 0 10px;
+    margin: 0 0 30px 10px;
     background: #198754;
     color: #fff;
     letter-spacing: -0.025em;
 }
 
-.hover .ha_bak {
-    width: 330px;
-    margin: 0 auto;
-    margin-left: 60px;
-}
-
-.hover .ha_bak p {
+.hover .detail_desc .setting {
+    margin: 0 0 30px 0;
+    padding: 0 60px;
     font-size: 15px;
     font-weight: 300;
-    margin: 20px auto 20px auto;
-    line-height: 23px;
     color: #fff;
-    letter-spacing: -0.025em;
+    line-height: 1.35;
+    text-align: left;
 }
 
 .hover .deep {
     width: 330px;
     margin-left: 60px;
     line-height: 25px;
+    line-height: 1.4;
+    color: #fff;
 }
 
-.hover .deep .ite {
+.hover .deep .item {
     font-size: 15px;
     font-weight: 400;
     text-align: left;
     letter-spacing: -0.025em;
 }
-
-.yaya:hover .hover {
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.yaya:hover .box_intro {
-    display: none;
-}
-
-.bbakchim {
-    padding-top: 250px;
-    width: 100%;
-    background: rgba(33, 33, 33, 0.7);
-    color: #fff;
-    height: 473px;
-}
-
-.hover_boxer .gry strong {
-    font-size: 21px;
-    font-weight: 500;
-    color: #fff;
-}
-
-.hover_boxer .gry .lining {
-    display: inline-block;
-    border-top: 1px solid #fff;
-    margin: 0 auto;
-    width: 330px;
-    margin: 10px;
-}
-
-.hover_boxer .angr>a {
-    display: inline-block;
-    padding: 5px 15px;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 0 0 0 10px;
-    background: #198754;
-}
-
-
-.hover_boxer .angr .ha_bbac {
-    width: 330px;
-    margin-left: 60px;
-    line-height: 25px;
-}
-
-.hover_boxer .ha_bbac p {
-    font-size: 15px;
-    font-weight: 300;
-    margin: 30px 0 30px 0;
-    line-height: 23px;
-    letter-spacing: -0.025em;
-    color: #fff;
-}
-
-.hover_boxer .deep_bbac {
-    width: 330px;
-    margin: 0 auto;
-    line-height: 25px;
-    letter-spacing: -0.025em;
-}
-
-.hover_boxer .deep_bbac .itm {
-    font-size: 15px;
-    font-weight: 400;
-    text-align: left;
-}
-
-.lala:hover .hover_boxer {
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-    /* animation: srr 0.5s; */
-}
-
-.lala:hover .box_intro {
-    display: none;
-}
-
 
 .detail {
     display: flex;
@@ -795,7 +631,6 @@ a {
 
 .detail a {
     padding: 10px 60px;
-    /* font-size: 16px; */
     border: 1px solid #333;
     border-radius: 10px;
 }
@@ -804,17 +639,10 @@ a {
     margin-left: 5px;
 }
 
-/* 
-@keyframes srr { 
- from { transform: width:0; } 
-
- to { transform: width: 100%:} 
- }*/
-
 .make {
     display: flex;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding: 100px 0 50px 0;
 }
 
 .reservation {
@@ -825,7 +653,7 @@ a {
 
 .reservation strong {
     display: block;
-    margin: 280px auto 30px auto;
+    margin: 335px auto 30px auto;
     font-size: 27px;
     font-weight: 500;
     letter-spacing: -0.025em;
@@ -852,6 +680,7 @@ a {
 
 .footer {
     color: #444;
+    padding: 0 0 100px 0;
 }
 
 .footer .top {
@@ -864,14 +693,11 @@ a {
     gap: 60px;
 }
 
-.footer .container>dl {
+.footer .container dl {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
 }
-
-/* #footer .container dt,
-#footer .container dd { display: flex; flex-direction: row; } */
 
 .footer .top dt::before,
 .footer .top dd~dd::before {
@@ -888,9 +714,17 @@ a {
 }
 
 .footer .bottom address {
-    line-height: 25px;
-    padding-bottom: 100px;
+    font-size: 15px;
+    margin: 0 0 5px 0;
     color: #444;
+}
+
+.footer .bottom>ul {
+    font-size: 15px;
+}
+
+.footer .bottom>ul li {
+    margin: 0 0 5px 0;
 }
 
 .to_top {
@@ -912,4 +746,49 @@ a {
 .to_top>i {
     font-size: 25px;
     font-weight: 700;
+}
+
+.scroll span {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotateZ(-45deg);
+    animation: spin 1.5s infinite;
+    box-sizing: border-box;
+}
+
+.scroll>a p {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    color: #fff;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+.scroll a {
+    padding: 10px 0 0 0;
 }
